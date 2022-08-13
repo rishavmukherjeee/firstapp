@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1075745217941",
+    "firebase_url": "https://fir-updates-20fdf-default-rtdb.firebaseio.com",
+    "project_id": "fir-updates-20fdf",
+    "storage_bucket": "fir-updates-20fdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075745217941:android:a96d63b87f7874e2586a9c",
+        "android_client_info": {
+          "package_name": "com.dds.dronealert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075745217941-pjdb07465s5ih4o7sbq0uuofjf4oqu8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG0X9H2Q1YBqJszWe7pmmjnf4S-c6uTZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075745217941-pjdb07465s5ih4o7sbq0uuofjf4oqu8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

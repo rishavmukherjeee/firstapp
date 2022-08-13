@@ -9,7 +9,9 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "name": "Drone Detection Alert",
+      "description": "Alerts for detected drones in nearby areas"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,7 +26,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.dronedetectionalertsystem"
     },
     "web": {
       "favicon": "./assets/favicon.png"
