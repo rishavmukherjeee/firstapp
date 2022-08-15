@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Ionicons } from '@expo/vector-icons';
-
+import firebase from 'firebase';
 import {
   StyleSheet,
   Text,
@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { styleProps } from 'react-native-web/dist/cjs/modules/forwardedProps';
 import { auth } from '../firebase';
+import SignupScreen from './SignupScreen'
 const handleSignOut= () =>{
   auth
   .signOut()
@@ -17,8 +18,9 @@ const handleSignOut= () =>{
   }
   )
 }
+const user = firebase.auth().currentUser
 export default class UserProfileView extends Component {
-
+  
   render() {
     return (
       <View style={styles.container}>
@@ -27,7 +29,7 @@ export default class UserProfileView extends Component {
                 <Image style={styles.avatar}
                   source={require('../images/logo.jpg')} />
 
-                <Text style={styles.name}> John doe </Text>
+                <Text style={styles.name}> name </Text>
                 <Text style={styles.userInfo}>{auth.currentUser.email} </Text>
                 <Text style={styles.userInfo}>Officer</Text>
                 

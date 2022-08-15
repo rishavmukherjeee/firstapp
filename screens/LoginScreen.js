@@ -25,7 +25,7 @@ const LoginScreen = () => {
         },[])
     }*/
 
-    const handleSignUp = () => {
+    /*const handleSignUp = () => {
         
         auth
         .createUserWithEmailAndPassword(email,password)
@@ -45,7 +45,7 @@ const LoginScreen = () => {
         
             console.error(error);
           });
-        }
+        }*/
         const handleLogin =() =>{
             auth
             .signInWithEmailAndPassword(email,password)
@@ -91,17 +91,20 @@ const LoginScreen = () => {
         ></TextInput>
         
     </View>
-    <View style={styles.buttonContainer}>
+    <View style={styles.butttonContainer}>
     
          <TouchableOpacity
         onPress={handleLogin }
+       /* onPress={() => {
+        handleLogin}} */
         style={styles.button}
         >
             <Text style={styles.buttonText}>Log In</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-        onPress={handleSignUp } 
+       onPress={() => {
+        navigation.navigate("SignupScreen")}} 
         style={styles.button2}
         >
             <Text style={styles.buttonOutlineText}>Sign Up</Text>
